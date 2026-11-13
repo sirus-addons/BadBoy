@@ -39,6 +39,7 @@ do
 		locNoReportMsg = "Прятать сообщение '%s'"
 		locManualReport = "Отключить автоматическую жалобу на спам (показывать подтверждение)"
 		locNoArtTitle = "Отключить фильтр ASCII-картинок"
+		locNoArtDesc = "Этот фильтр удаляет строки продавцов золота с повторяющимися символами вроде '-' и '+' |cFF33FF99ТОЛЬКО|r из публичных каналов (общий/торговля/поиск спутников и т. д.), но иногда может отфильтровать и обычных игроков, которые используют |cFF33FF99МНОГО|r символов '.' или '!', что большинство и так считает спамом. Жалобы на них |cFF33FF99НЕ|r отправляются."
 		BADBOY_NOLATIN = true
 	end
 
@@ -92,7 +93,7 @@ do
 	local btnManualReport = CreateFrame("CheckButton", "BadBoyConfigPopupButton", badboy)
 	btnManualReport:SetWidth(26)
 	btnManualReport:SetHeight(26)
-	btnManualReport:SetPoint("TOPLEFT", 16, -57)
+	btnManualReport:SetPoint("TOPLEFT", 16, -61)
 	btnManualReport:SetScript("OnClick", function(frame)
 		local tick = frame:GetChecked()
 		if tick then
@@ -119,7 +120,7 @@ do
 	local btnNoArtFilter = CreateFrame("CheckButton", "BadBoyConfigNoArtButton", badboy)
 	btnNoArtFilter:SetWidth(26)
 	btnNoArtFilter:SetHeight(26)
-	btnNoArtFilter:SetPoint("TOPLEFT", 16, -79)
+	btnNoArtFilter:SetPoint("TOPLEFT", 16, -87)
 	btnNoArtFilter:SetScript("OnClick", function(frame)
 		if BADBOY_NOLATIN then return end
 		local tick = frame:GetChecked()

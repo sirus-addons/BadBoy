@@ -1,7 +1,8 @@
 ## Interface: 30300
 ## Version: 6.012
 ## Title: BadBoy
-## Notes: |@Version: 1@|A light, automatic spam blocker & reporter.
+## Notes: |@Version: 2@|A light, automatic spam blocker & reporter.
+## Notes-ruRU: |@Version: 2@|Лёгкий блокировщик спама с автоматической отправкой жалоб.
 ## Author: Funkydude
 ## SavedVariables: BADBOY_POPUP, BADBOY_SILENT, BADBOY_ALLOWART, BADBOY_DEBUG
 ## X-Credits: Shadowed(API hunting), Ellipsis(remembering odd things), Anea(original SpamSentry blacklist)
